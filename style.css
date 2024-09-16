@@ -1,3 +1,31 @@
+/* Font Start */
+@font-face {
+  font-family: "League_Spartan";
+  src: url("./League_Spartan/LeagueSpartan-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "League_Spartan_Thin";
+  src: url("./League_Spartan/static/LeagueSpartan-Thin.ttf");
+}
+@font-face {
+  font-family: "League_Spartan_Regular";
+  src: url("./League_Spartan/static/LeagueSpartan-Regular.ttf");
+}
+@font-face {
+  font-family: "League_Spartan_Medium";
+  src: url("./League_Spartan/static/LeagueSpartan-Medium.ttf");
+}
+@font-face {
+  font-family: "League_Spartan_SemiBold";
+  src: url("./League_Spartan/static/LeagueSpartan-SemiBold.ttf");
+}
+@font-face {
+  font-family: "League_Spartan_Bold";
+  src: url("./League_Spartan/static/LeagueSpartan-Bold.ttf");
+}
+/* Font End */
+
+/* Variable Start */
 :root {
   /* Theme 1 */
   --veryDarkDesaturatedBlue: hsl(222, 26%, 31%); /* (main background) */
@@ -64,7 +92,22 @@
   /* Typography */
   --fontSize: 2rem; /* (numbers) */
 }
+/* Variable Start */
 
+/* Remove Default styling */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League_Spartan", sans-serif;
+}
+/* Remove Default styling End*/
+
+html {
+  scroll-behavior: smooth;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
