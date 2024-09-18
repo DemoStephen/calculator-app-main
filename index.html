@@ -9,9 +9,67 @@
   <title>Frontend Mentor | Calculator app</title>
 </head>
 
-<body>
+<body data-body class="d-flex">
+  <main class="d-flex ">
+    <header class="d-flex">
+      <p class="logo">calc</p>
 
+      <div class="theme-section d-flex">
+        <p>theme</p>
+        <div class="theme-toggle-controller d-flex">
+          <div class="theme-toggle-index d-flex">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+          <div class="theme-toggle-input d-flex">
+            <label for="theme-1">
+              <input data-themes="theme-1" type="radio" name="theme" id="theme-1" class="d-none" checked>
+              <span class="toggle-circle"></span>
+            </label>
+            <label for="theme-2">
+              <input data-themes="theme-2" type="radio" name="theme" id="theme-2" class="d-none">
+              <span class="toggle-circle"></span>
+            </label>
+            <label for="theme-3">
+              <input data-themes="theme-3" type="radio" name="theme" id="theme-3" class="d-none">
+              <span class="toggle-circle"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
 
+    <section class="outputScreen d-flex">
+      <p class="previousDisplay">Ans</p>
+      <p class="newValue">0</p>
+    </section>
+
+    <section class="buttons">
+      <button data-number="7">7</button>
+      <button data-number="8">8</button>
+      <button data-number="9">9</button>
+      <button data-delete class="deleteAndReset">del</button>
+
+      <button data-number="4">4</button>
+      <button data-number="5">5</button>
+      <button data-number="6">6</button>
+      <button data-operator="+">+</button>
+
+      <button data-number="1">1</button>
+      <button data-number="2">2</button>
+      <button data-number="3">3</button>
+      <button data-operator="-">-</button>
+
+      <button data-number=".">.</button>
+      <button data-number="0">0</button>
+      <button data-operator="/">/</button>
+      <button data-operator="x">x</button>
+
+      <button data-reset class="deleteAndReset span">reset</button>
+      <button data-eqauls class="equals span">=</button>
+    </section>
+  </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
