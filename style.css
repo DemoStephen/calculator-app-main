@@ -3,96 +3,67 @@
   font-family: "League_Spartan";
   src: url("./League_Spartan/LeagueSpartan-VariableFont_wght.ttf");
 }
-@font-face {
-  font-family: "League_Spartan_Thin";
-  src: url("./League_Spartan/static/LeagueSpartan-Thin.ttf");
-}
-@font-face {
-  font-family: "League_Spartan_Regular";
-  src: url("./League_Spartan/static/LeagueSpartan-Regular.ttf");
-}
-@font-face {
-  font-family: "League_Spartan_Medium";
-  src: url("./League_Spartan/static/LeagueSpartan-Medium.ttf");
-}
-@font-face {
-  font-family: "League_Spartan_SemiBold";
-  src: url("./League_Spartan/static/LeagueSpartan-SemiBold.ttf");
-}
-@font-face {
-  font-family: "League_Spartan_Bold";
-  src: url("./League_Spartan/static/LeagueSpartan-Bold.ttf");
-}
-/* Font End */
 
 /* Variable Start */
 :root {
-  /* Theme 1 */
-  --veryDarkDesaturatedBlue: hsl(222, 26%, 31%); /* (main background) */
-  --veryDarkDesaturatedBlue: hsl(
-    223,
-    31%,
-    20%
-  ); /* (toggle background, keypad background) */
-  --veryDarkDesaturatedBlue: hsl(224, 36%, 15%); /* (screen background) */
-
-  --desaturatedDarkBlue: hsl(225, 21%, 49%); /* (key background) */
-  --desaturatedDarkBlue: hsl(224, 28%, 35%); /* (key shadow) */
-
-  --red: hsl(6, 63%, 50%); /* (key background, toggle) */
-  --darkRed: hsl(6, 70%, 34%); /* (key shadow) */
-
-  --lightGrayishOrange: hsl(30, 25%, 89%); /* (key background) */
-  --grayishOrange: hsl(28, 16%, 65%); /* (key shadow) */
-
+  --textColor: hsl(0, 0%, 100%);
+  --MainBg: hsl(222, 26%, 31%);
+  --ToggleBg: hsl(224, 29%, 20%);
+  --outputDisplayScreen: hsl(224, 36%, 15%);
+  --deleteAndReset: hsl(225, 21%, 49%);
+  --deleteAndResetShadow: hsl(224, 28%, 35%);
+  --equalsBackground: hsl(6, 63%, 50%);
+  --equalsBackgroundShadow: hsl(6, 70%, 34%);
+  --buttonBackground: hsl(30, 25%, 89%);
+  --buttonBackgroundHover: hsl(30, 25%, 100%);
+  --buttonBackgroundShadow: hsl(28, 16%, 65%);
   --veryDarkGrayishBlue: hsl(221, 14%, 31%);
-  --white: hsl(0, 0%, 100%);
-  /* Theme 1 End */
-
-  /* Theme 2 */
-  --lightGray: hsl(0, 0%, 90%); /* (main background) */
-  --grayishRed: hsl(0, 5%, 81%); /* (toggle background, keypad background) */
-  --veryLightGray: hsl(0, 0%, 93%); /* (screen background) */
-
-  --darkModerateCyan: hsl(185, 42%, 37%); /* (key background) */
-  --veryDarkCyan: hsl(185, 58%, 25%); /* (key shadow) */
-
-  --orange: hsl(25, 98%, 40%); /* (key background, toggle) */
-  --darkOrange: hsl(25, 99%, 27%); /* (key shadow) */
-
-  --lightGrayishYellow: hsl(45, 7%, 89%); /* (key background) */
-  --darkGrayishOrange: hsl(35, 11%, 61%); /* (key shadow) */
-
-  --veryDarkGrayishYellow: hsl(60, 10%, 19%);
-  --white: hsl(0, 0%, 100%); /* (text) */
-  /* Theme 2 End */
-
-  /* Theme 3 */
-  --veryDarkViolet: hsl(268, 75%, 9%); /* (main background) */
-  --veryDarkViolet: hsl(
-    268,
-    71%,
-    12%
-  ); /* (toggle background, keypad background, screen background) */
-
-  --darkViolet: hsl(281, 89%, 26%); /* (key background) */
-  --vividMagenta: hsl(285, 91%, 52%); /* (key shadow) */
-
-  --pureCyan: hsl(176, 100%, 44%); /* (key background, toggle) */
-  --softCyan: hsl(177, 92%, 70%); /* (key shadow) */
-
-  --veryDarkViolet: hsl(268, 47%, 21%); /* (key background) */
-  --darkMagenta: hsl(290, 70%, 36%); /* (key shadow) */
-
-  --lightYellow: hsl(52, 100%, 62%);
-  --veryDarkBlue: hsl(198, 20%, 13%);
-  --white: hsl(0, 0%, 100%); /* (text) */
-  /* Theme 3 End */
-
-  /* Typography */
-  --fontSize: 2rem; /* (numbers) */
 }
-/* Variable Start */
+.theme-1 {
+  transition: 0.5s;
+  --MainBg: hsl(222, 26%, 31%);
+  --ToggleBg: hsl(224, 29%, 20%);
+  --outputDisplayScreen: hsl(224, 36%, 15%);
+  --deleteAndReset: hsl(225, 21%, 49%);
+  --deleteAndResetShadow: hsl(224, 28%, 35%);
+  --equalsBackground: hsl(6, 63%, 50%);
+  --equalsBackgroundShadow: hsl(6, 70%, 34%);
+  --buttonBackground: hsl(30, 25%, 89%);
+  --buttonBackgroundHover: hsl(30, 25%, 100%);
+  --buttonBackgroundShadow: hsl(28, 16%, 65%);
+  --veryDarkGrayishBlue: hsl(221, 14%, 31%);
+}
+.theme-2 {
+  transition: 0.5s;
+  --MainBg: hsl(0, 0%, 90%);
+  --ToggleBg: hsl(0, 5%, 81%);
+  --outputDisplayScreen: hsl(0, 0%, 93%);
+  --deleteAndReset: hsl(185, 42%, 37%);
+  --deleteAndResetShadow: hsl(185, 58%, 25%);
+  --equalsBackground: hsl(25, 98%, 40%);
+  --equalsBackgroundShadow: hsl(25, 99%, 27%);
+  --buttonBackground: hsl(45, 7%, 89%);
+  --buttonBackgroundHover: hsl(45, 7%, 100%);
+  --buttonBackgroundShadow: hsl(35, 11%, 61%);
+  --veryDarkGrayishBlue: hsl(60, 10%, 19%);
+  --textColor: hsl(60, 10%, 19%);
+}
+.theme-3 {
+  transition: 0.5s;
+  --MainBg: hsl(268, 75%, 9%);
+  --ToggleBg: hsl(268, 71%, 12%);
+  --outputDisplayScreen: hsl(281, 89%, 26%);
+  --deleteAndReset: hsl(285, 91%, 52%);
+  --deleteAndResetShadow: hsl(281, 89%, 26%);
+  --equalsBackground: hsl(177, 92%, 70%);
+  --equalsBackgroundShadow: hsl(268, 47%, 21%);
+  --equalsBackgroundShadow: hsl(281, 89%, 26%);
+  --buttonBackground: hsl(268, 75%, 9%);
+  --buttonBackgroundHover: hsl(268, 75%, 10%);
+  --textColor: hsl(52, 100%, 62%);
+  --buttonBackgroundShadow: hsl(290, 70%, 36%);
+  --veryDarkGrayishBlue: hsl(52, 100%, 62%);
+}
 
 /* Remove Default styling */
 *,
@@ -108,11 +79,148 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  background-color: var(--MainBg);
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+main {
+  width: clamp(25rem, calc(100% - 40px), 28rem);
+  flex-direction: column;
+  gap: 1rem;
+}
+header {
+  justify-content: space-between;
+  align-items: center;
+  color: var(--textColor);
+  width: 100%;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.theme-section {
+  text-align: center;
+  gap: 1rem;
+  align-items: end;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.theme-toggle-controller {
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.theme-toggle-index {
+  width: 100%;
+  justify-content: space-around;
+  font-size: 0.75rem;
+}
+.theme-toggle-input {
+  background-color: var(--ToggleBg);
+  border-radius: 1rem;
+  padding: 0.05rem 0.175rem;
+  gap: 0.45rem;
+}
+.theme-toggle-input > label {
+  padding: 0.175rem 0.15rem;
+  width: 1.15rem;
+  height: 1.25rem;
+}
+.toggle-circle {
+  padding: 0.005rem 0.45rem;
+  border-radius: 50%;
+  transition: 0.2s;
+  background-color: transparent;
+}
+.toggle-circle {
+  cursor: pointer;
+}
+input:checked + .toggle-circle,
+input:checked + .toggle-circle,
+input:checked + .toggle-circle {
+  visibility: visible;
+  background-color: var(--equalsBackground);
+}
+
+.outputScreen {
+  background-color: var(--outputDisplayScreen);
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: end;
+  color: var(--textColor);
+  height: 7rem;
+}
+.newValue {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.buttons {
+  background-color: var(--ToggleBg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.span {
+  grid-column: 2 span;
+}
+button {
+  font-size: 2rem;
+  padding: 0.75rem;
+  border-radius: 0.35rem;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  background-color: var(--buttonBackground);
+  color: var(--veryDarkGrayishBlue);
+  box-shadow: 0px 5px var(--buttonBackgroundShadow);
+  transition: 0.2s;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0px 3px var(--buttonBackgroundShadow);
+  background-color: var(--buttonBackgroundHover);
+}
+.deleteAndReset {
+  background-color: var(--deleteAndReset);
+  box-shadow: 0px 5px var(--deleteAndResetShadow);
+  color: var(--ToggleBg);
+}
+.deleteAndReset:hover {
+  background-color: var(--deleteAndResetShadow);
+  box-shadow: 0px 3px var(--deleteAndResetShadow);
+}
+.equals {
+  background-color: var(--equalsBackground);
+  box-shadow: 0px 5px var(--equalsBackgroundShadow);
+  color: var(--ToggleBg);
+}
+.equals:hover {
+  background-color: var(--equalsBackground);
+  box-shadow: 0px 3px var(--equalsBackgroundShadow);
+}
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+.d-none {
+  display: none;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--textColor);
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--textColor);
 }
