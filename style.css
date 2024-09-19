@@ -60,7 +60,6 @@
   --deleteAndReset: hsl(285, 91%, 52%);
   --deleteAndResetShadow: hsl(281, 89%, 26%);
   --equalsBackground: hsl(177, 92%, 70%);
-  --equalsBackgroundShadow: hsl(268, 47%, 21%);
   --equalsBackgroundShadow: hsl(281, 89%, 26%);
   --buttonBackground: hsl(268, 75%, 9%);
   --buttonBackgroundHover: hsl(268, 75%, 10%);
@@ -145,8 +144,6 @@ header {
 .toggle-circle {
   cursor: pointer;
 }
-input:checked + .toggle-circle,
-input:checked + .toggle-circle,
 input:checked + .toggle-circle {
   visibility: visible;
   background-color: var(--equalsBackground);
@@ -161,6 +158,7 @@ input:checked + .toggle-circle {
   text-align: end;
   color: var(--textColor);
   height: 7rem;
+  overflow: hidden;
 }
 .newValue {
   font-size: 3rem;
