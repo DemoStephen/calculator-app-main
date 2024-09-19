@@ -92,7 +92,7 @@ body {
   gap: 1rem;
 }
 main {
-  width: clamp(25rem, calc(100% - 40px), 28rem);
+  width: clamp(24.5rem, calc(100% - 40px), 28rem);
   flex-direction: column;
   gap: 1rem;
   background-color: var(--MainBg);
