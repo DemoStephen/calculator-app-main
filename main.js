@@ -16,7 +16,7 @@ const operatorsBtns = document.querySelectorAll("[data-operator]");
 
 const backSpace = document.querySelector("[data-delete]");
 const reset = document.querySelector("[data-reset]");
-const eqauls = document.querySelector("[data-eqauls]");
+const equals = document.querySelector("[data-equals]");
 
 let screenOutPut = {
   current: "",
@@ -27,10 +27,7 @@ let screenOutPut = {
 function updateScreen() {
   if (screenOutPut.operator)
     previousDisplay.innerText = `${screenOutPut.previous} ${screenOutPut.operator}`;
-  else if (previousDisplay.innerText.includes("="))
-    previousDisplay.innerText = `${screenOutPut.previous}`;
   else previousDisplay.innerText = "";
-
   currentDisplay.innerText = screenOutPut.current;
 }
 
@@ -88,7 +85,7 @@ for (const operatorsBtn of operatorsBtns) {
   }
 }
 
-eqauls.addEventListener("click", calculateInput);
+equals.addEventListener("click", calculateInput);
 function calculateInput() {
   if (!screenOutPut.current || !screenOutPut.previous || !screenOutPut.operator)
     return;
@@ -99,25 +96,22 @@ function calculateInput() {
   switch (operatorUsed) {
     case "+":
       result = previousValue + currentValue;
-      console.log(result);
       break;
     case "-":
       result = previousValue - currentValue;
-      console.log(result);
       break;
     case "x":
       result = previousValue * currentValue;
-      console.log(result);
       break;
     case "/":
       result = previousValue / currentValue;
-      console.log(result);
       break;
   }
   screenOutPut = {
     current: result,
-    previous: `${previousValue} ${currentValue} ${operatorUsed} =`,
+    previous: `${previousValue} ${operatorUsed} ${currentValue} =`,
     operator: undefined,
   };
+  previousDisplay.innerText = screenOutPut.previous;
   updateScreen();
 }
